@@ -1,51 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SynthSpace</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
     <h1>SynthSpace</h1>
-    <div class="description">Welcome to SynthSpace, the ultimate social hub for all things synthwave! Connect with fellow enthusiasts, discover new music, and explore retro-futuristic aesthetic that has captivated audiences around the world. Join our community and embrace the neon-soaked world of SynthSpace today.</div>
+    <div class="description">
+      Welcome to SynthSpace, the ultimate social hub for all things synthwave!
+      Connect with fellow enthusiasts, discover new music, and explore
+      retro-futuristic aesthetic that has captivated audiences around the world.
+      Join our community and embrace the neon-soaked world of SynthSpace today.
+    </div>
     <form action="">
-        <div class="form-row">
-            <div class="input-field">
-                <input type="text" id="first-name" name="first-name" required>
-                <label for="first-name">FIRST NAME</label>
-            </div>
-            <div class="input-field">
-                <input type="text" id="last-name" name="last-name" required>
-                <label for="last-name">LAST NAME</label>
-            </div>
+      <div class="form-row">
+        <div class="input-field">
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            maxlength="10"
+            required
+          />
+          <label for="first-name">FIRST NAME</label>
+          <ion-icon name="person"></ion-icon>
         </div>
-        <div class="form-row">
-            <div class="input-field">
-                <input type="email" name="email" id="email" required>
-                <label for="email" class="label">EMAIL</label>
-            </div>
-            <div class="input-field">
-                <input type="tel" name="phone" id="phone">
-                <label for="phone">PHONE NUMBER</label>
-            </div>
+        <div class="input-field">
+          <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            maxlength="10"
+            required
+          />
+          <label for="last-name">LAST NAME</label>
+          <ion-icon name="person"></ion-icon>
         </div>
-        <div class="form-row">
-            <div class="input-field">
-                <input type="password" name="password" id="password" required>
-                <label for="password">PASSWORD</label>
-            </div>
-            <div class="input-field">
-                <input type="password" name="password-confirm" id="password-confirm" required>
-                <label for="password-confirm">CONFIRM PASSWORD</label>
-            </div>
+      </div>
+      <div class="form-row">
+        <div class="input-field">
+          <input type="email" name="email" id="email" maxlength="10" required />
+          <label for="email" class="label">EMAIL</label>
+          <ion-icon name="mail"></ion-icon>
         </div>
-        <div class="form-row">
-            <button type="submit">Sign up</button>
+        <div class="input-field">
+          <input type="tel" name="phone" id="phone" maxlength="10" required />
+          <label for="phone">PHONE NUMBER</label>
+          <ion-icon name="call"></ion-icon>
         </div>
+      </div>
+      <div class="form-row">
+        <div class="input-field">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            maxlength="10"
+            required
+          />
+          <label for="username">USERNAME</label>
+          <ion-icon name="person-circle"></ion-icon>
+        </div>
+        <div class="input-field">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            maxlength="10"
+            required
+          />
+          <label for="password">PASSWORD</label>
+          <ion-icon name="lock-closed"></ion-icon>
+        </div>
+      </div>
+      <div class="form-row">
+        <button type="submit">Sign up</button>
+      </div>
     </form>
-    <div>Already have an account? <a href="">Sign in</a></div>
-</body>
+    <div class="sign-in">Already have an account? <a href="">Sign in</a></div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
