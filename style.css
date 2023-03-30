@@ -117,4 +117,12 @@ ion-icon {
     align-items: center;
     gap: 36px;
   }
+
+  .description {
+    font-size: 1.3rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
 }
